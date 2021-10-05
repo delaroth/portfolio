@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+
+
+    <div class="container">
+        <!-- this is my title with a pic of me -->
+        <div class="intro">
+            <img class="profile-pic" src="images/profile-pic.jpg" width="200">
+            <h1>Levi Halperin</h1>
+            <h3>Web Developer in training</h3>
+            <p class="quote">“What gets us into trouble is not what we don’t know. <br />
+                It’s what we know for sure that just ain’t so.” <br />
+                -Mark Twain</p>
+        </div>
+
+        <hr />
+
+        <!-- this is some basic information about me -->
+        <div class="about-grid">
+            <div class="i-am">
+                <h1>I am:</h1>
+                <ul class="about-list">
+                    <li>A fullstack developer</li>
+                    <li>A hobbiest circus performer</li>
+                    <li>An avid traveller</li>
+                </ul>
+            </div>
+            <div class="i-like">
+                <h1>I like to:</h1>
+                <ul class="about-list">
+                    <li>Meet new people</li>
+                    <li>Spend time in nature</li>
+                    <li>Visit new places</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr />
+
+        <!-- this is a grid of projets I've finished -->
+        <div class="my-projects">
+            <h3 class="project-heading">My Projects</h3>
+            <div class="projects-grid">
+                <div class="project-image-wrapper">
+                    <h4>project 1</h4>
+                    <img class="project-image" src="https://picsum.photos/302/300" alt="">
+                </div>
+                <div class="project-image-wrapper">
+                    <h4>project 2</h4>
+                    <img class="project-image" src="https://picsum.photos/300/302" alt="">
+                </div>
+                <div class="project-image-wrapper">
+                    <h4>project 3</h4>
+                    <img class="project-image" src="https://picsum.photos/301/300" alt="">
+                </div>
+                <div class="project-image-wrapper">
+                    <h4>project 4</h4>
+                    <img class="project-image" src="https://picsum.photos/300/301" alt="">
+                </div>
+            </div>
+        </div>
+
+        <hr />
+
+        <!-- this is my footer with links to my social medias -->
+
+        <div class="links-and-contact">
+            <footer class="links">
+                <h3>Links</h3>
+                <ul class="links-list">
+                    <li><a href="">Github</a></li>
+                    <li><a href="">Linkedin</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Youtube</a></li>
+                </ul>
+            </footer>
+            <!-- this is my contact form -->
+            <div>
+                <form action="mailto:levwbdev@gmail.com">
+                    <label for="email">
+                        <h4>Email:</h4>
+                        <input type="email" id="email" emailText="enter your email" />
+                    </label>
+                    <label for="message">
+                        <h4>Message:</h4>
+                        <textarea id="message" placeholder="Your Message"></textarea>
+                    </label>
+                    <div class='submit-button-wrapper'>
+                        <input type="submit" value="Send Message" id="submit-button" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+
+</html>
+
+<form action="mailto:you@yourdmainhere.com" method="post" enctype="text/plain">
+    FirstName:<input type="text" name="FirstName">
+    Email:<input type="text" name="Email">
+    <input type="submit" name="submit" value="Submit">
+</form>

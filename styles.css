@@ -1,0 +1,175 @@
+/* this is the code for the full container */
+.container {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+/* this is my intro */
+.intro {
+  text-align: center;
+}
+
+.intro img {
+  border-radius: 50%;
+  box-shadow: 0 4px 10px 0 rgba(50, 75, 200, 0.8);
+  transition: all ease-in-out;
+}
+
+.intro img:hover {
+  box-shadow: 0 8px 15px 0 rgb(50, 75, 200, 0.8);
+}
+
+/* this is for the about me section */
+.about-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+@media (max-width: 480px) {
+  .about-grid {
+    grid-template-columns: 100%;
+  }
+}
+
+.i-am,
+.i-like {
+  text-align: center;
+  text-decoration: none;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+}
+
+/*This is for my project portfolia section */
+
+.project-heading {
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+@media (max-width: 650px) {
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}
+
+.project-image {
+  border-radius: 5px;
+  box-shadow: 0 4px 6px 0 rgba(34, 60, 80, 0.16);
+  transition: all ease-in-out;
+  z-index: 1;
+}
+
+.project-image:hover {
+  filter: brightness(0.75);
+  box-shadow: 0 6px 8px 0 rgba(24, 155, 148, 0.8);
+}
+
+.project-image-wrapper {
+  display: flex;
+  justify-self: center;
+  padding: 4%;
+  position: relative;
+}
+
+.project-image-wrapper:hover > h4 {
+  visibility: visible;
+}
+
+.project-image-wrapper > h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  color: white;
+  z-index: 2;
+}
+/* this part is my links and my contact form */
+
+.links-and-contact {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.links {
+  justify-self: center;
+}
+
+.links-list {
+  list-style: none;
+  padding: 0;
+}
+
+form input,
+textarea {
+  padding: 5px;
+  border-radius: 5px;
+  width: 240px;
+}
+
+form {
+  width: 250px;
+  margin: 0 auto;
+}
+
+form input[type="submit"] {
+  width: 250px;
+  background-color: rgb(52, 161, 125);
+}
+
+form input[type="submit"]:hover {
+  background-color: rgb(101, 155, 70);
+  cursor: pointer;
+}
+
+.submit-button-wrapper {
+  margin: 5px 0;
+}
+
+@media (max-width: 650px) {
+  .links-and-contact {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}
+
+/* general text styling */
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  background-color: #caebf2;
+  color: #012346;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Roboto Mono", monospace;
+}
+
+.container > div {
+  margin: 20px auto;
+}
+
+hr {
+  border: 0;
+  height: 2.5px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.quote {
+  font-style: italic;
+}
