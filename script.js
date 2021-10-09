@@ -1,7 +1,19 @@
-let submitButton =
-document.querySelector('#submit-button');
+// let projects = document.getElementsByClassName("project-image-wrapper")
+// let projectInfo = document.getElementsByClassName("projectInfo")
 
-function clickListener(event)  {
+
+
+
+
+
+
+
+
+
+let submitButton =
+    document.querySelector('#submit-button');
+
+function clickListener(event) {
     event.preventDefault();
     console.log('Button clicked');
 }
@@ -9,7 +21,7 @@ function clickListener(event)  {
 submitButton.addEventListener('click', clickListener);
 
 function emailValidate(email) {
-    if(email.includes('@')) {
+    if (email.includes('@')) {
         return true;
     }
     else {
@@ -17,18 +29,18 @@ function emailValidate(email) {
     }
 }
 
-function clickListener (event) {
+function clickListener(event) {
     event.preventDefault();
 
     let emailInput = document.querySelector('#email');
-    let messageInput =document.querySelector('#message');
+    let messageInput = document.querySelector('#message');
 
     let emailText = emailInput.value;
     let messageText = messageInput.value;
 
-    if(emailValidate(emailText) !== true) {
-       console.log('The email address must contain @');
-       return false; 
+    if (emailValidate(emailText) !== true) {
+        console.log('The email address must contain @');
+        return false;
     }
     console.group('Thanks for your message')
 
